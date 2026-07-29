@@ -74,7 +74,16 @@ const login=async(req,res)=>{
         });
     }
 };
-
-module.exports={
-    signup,login
+const me = async (req, res) => {
+    try {
+        const foundUser = await User.findById(req.user.id).select('-password');
+        if (!foundUser) {
+            return res.status(404).json({ message: "user not found" });
+        }
+        res.json(foundUser);
+    } catch (error) {
+        res.status(500).json({ error: error.message });
+    }
 };
+
+module.exports = { signup, login, me };

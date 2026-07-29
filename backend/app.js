@@ -1,6 +1,7 @@
 const express=require('express');
 const mongoose=require('mongoose')
 const authroute=require('./routes/auth');
+const job_route=require('./routes/jobs');
 require('dotenv').config()   
 const app=express();
 app.use(express.json());
@@ -23,4 +24,6 @@ console.log("server is listening on port 5000")
 //routes
 
 app.use('/api/auth', authroute);
+app.use('/api/jobs',job_route)
+
 

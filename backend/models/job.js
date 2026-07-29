@@ -1,8 +1,6 @@
 const mongoose=require('mongoose');
 const jobschema=new mongoose.Schema({
-    jobid:{
-        type:String,required:true,unique:true
-    },
+    
     jobdescription:{
         type:String,required:true
 
@@ -14,7 +12,7 @@ const jobschema=new mongoose.Schema({
         type:Number,required:true,min:0
     },
     postedby:{
-        type:mongoose.Schema.Types.ObjectId,ref:'user',
+        type:mongoose.Schema.Types.ObjectId,ref:'User',
         required:true,
     }
 
