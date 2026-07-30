@@ -19,10 +19,12 @@ then(()=>console.log("db connected")).
 catch(err=>console.log("db error", err));
 
 //server checking
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+    console.log(`server is listening on port ${PORT}`);
+});
 
-app.listen(5000,()=>{
-console.log("server is listening on port 5000")
-})
+
 
 //routes
 
