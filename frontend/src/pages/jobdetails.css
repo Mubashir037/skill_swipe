@@ -1,0 +1,74 @@
+.detail-screen {
+    min-height: 100vh;
+    background: #FBF8F3;
+    font-family: 'Inter', sans-serif;
+}
+
+.detail-status {
+    text-align: center;
+    padding: 4rem 0;
+    color: #8C8C82;
+    font-size: 0.95rem;
+}
+
+.detail-card {
+    max-width: 640px;
+    margin: 3rem auto;
+    background: #ffffff;
+    border: 1px solid #ECE7DD;
+    border-radius: 18px;
+    padding: 2.75rem;
+}
+
+.detail-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #8C9A86;
+    font-weight: 600;
+}
+
+.detail-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    font-size: 2.1rem;
+    color: #313129;
+    margin: 0.6rem 0 0.4rem 0;
+}
+
+.detail-salary {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #4F6151;
+    margin: 0 0 1.5rem 0;
+}
+
+.detail-desc {
+    font-size: 0.98rem;
+    line-height: 1.7;
+    color: #5C5C54;
+    margin: 0 0 2rem 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid #F2EEE4;
+}
+
+.detail-apply {
+    background: #4F6151;
+    color: #FBF8F3;
+    border: none;
+    padding: 0.85rem 1.75rem;
+    border-radius: 9px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.15s ease;
+}
+
+.detail-apply:hover:not(:disabled) { background: #435243; }
+.detail-apply:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.detail-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #8A6E5C;
+}

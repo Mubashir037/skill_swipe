@@ -1,11 +1,13 @@
 const express=require('express');
-const mongoose=require('mongoose')
+const mongoose=require('mongoose');
+const cors = require('cors');
 const authroute=require('./routes/auth');
 const job_route=require('./routes/jobs');
 const app_route=require('./routes/applications_route');
 require('dotenv').config()   
 const app=express();
 app.use(express.json());
+app.use(cors());
 
 
 
