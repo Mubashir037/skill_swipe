@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap');
+
+.land-screen {
+    background: #FBF8F3;
+    font-family: 'Inter', sans-serif;
+    color: #3A3A35;
+}
+
+.land-eyebrow {
+    font-size: 0.75rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #8C9A86;
+    font-weight: 600;
+}
+
+/* ---------- HERO ---------- */
+.land-hero {
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.land-headline {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 3.2rem;
+    line-height: 1.1;
+    color: #313129;
+    margin: 1rem 0 1.25rem 0;
+}
+
+.land-sub {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: #6E7268;
+    max-width: 46ch;
+    margin: 0 auto 2.25rem;
+}
+
+.land-cta-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.land-cta-primary {
+    background: #4F6151;
+    color: #FBF8F3;
+    padding: 0.85rem 1.6rem;
+    border-radius: 9px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background 0.15s ease;
+}
+.land-cta-primary:hover { background: #435243; }
+
+.land-cta-secondary {
+    color: #8A6E5C;
+    padding: 0.85rem 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+.land-cta-secondary:hover { text-decoration: underline; }
+
+.land-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid #ECE7DD;
+}
+
+.land-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.land-stat-num {
+    font-family: 'Fraunces', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #313129;
+}
+
+.land-stat-label {
+    font-size: 0.8rem;
+    color: #8C8C82;
+}
+
+/* ---------- MISSION ---------- */
+.land-mission {
+    background: #E4EAE1;
+    padding: 4.5rem 2rem;
+}
+
+.land-mission-inner {
+    max-width: 640px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.land-mission-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: #2B3327;
+    margin: 0.75rem 0 1.25rem 0;
+}
+
+.land-mission-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4F5A49;
+}
+
+.land-pillars {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.land-pillar {
+    background: #FBF8F3;
+    border-radius: 14px;
+    padding: 1.75rem;
+}
+
+.land-pillar-mark {
+    font-family: 'Fraunces', serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #C98A6B;
+}
+
+.land-pillar h3 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #313129;
+    margin: 0.5rem 0 0.4rem 0;
+}
+
+.land-pillar p {
+    font-size: 0.88rem;
+    color: #6E7268;
+    line-height: 1.55;
+    margin: 0;
+}
+
+/* ---------- REVIEWS ---------- */
+.land-reviews {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.land-reviews-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #313129;
+    margin: 0.5rem 0 3rem 0;
+}
+
+.land-review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    max-width: 980px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.review-card {
+    background: #ffffff;
+    border: 1px solid #ECE7DD;
+    border-radius: 14px;
+    padding: 1.75rem;
+    position: relative;
+}
+
+.review-stamp {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: #8C9A86;
+    border: 1.5px solid #C9D4C4;
+    border-radius: 20px;
+    padding: 0.2rem 0.6rem;
+    transform: rotate(-3deg);
+    margin-bottom: 1rem;
+}
+
+.review-quote {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #4A4A44;
+    margin: 0 0 1.25rem 0;
+}
+
+.review-author {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    padding-top: 0.9rem;
+    border-top: 1px dashed #ECE7DD;
+}
+
+.review-name {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #313129;
+}
+
+.review-role {
+    font-size: 0.78rem;
+    color: #8C8C82;
+}
+
+/* ---------- FINAL CTA ---------- */
+.land-final-cta {
+    text-align: center;
+    padding: 4.5rem 2rem;
+    background: #313129;
+}
+
+.land-final-cta h2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #FBF8F3;
+    margin: 0 0 1.75rem 0;
+}
+
+/* ---------- FOOTER ---------- */
+.land-footer {
+    background: #26261F;
+    color: #C7C4B8;
+    padding: 3.5rem 2rem 1.5rem;
+}
+
+.land-footer-top {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1080px;
+    margin: 0 auto 2.5rem;
+}
+
+.land-footer-logo {
+    font-family: 'Fraunces', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #FBF8F3;
+}
+
+.land-footer-brand p {
+    font-size: 0.85rem;
+    color: #9C9A8E;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+}
+
+.land-footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.land-footer-heading {
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #6E6C60;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.land-footer-col a {
+    font-size: 0.88rem;
+    color: #C7C4B8;
+    text-decoration: none;
+}
+.land-footer-col a:hover { color: #FBF8F3; }
+
+.land-footer-bottom {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    border-top: 1px solid #3A3A32;
+    font-size: 0.78rem;
+    color: #6E6C60;
+    text-align: center;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 860px) {
+    .land-headline { font-size: 2.2rem; }
+    .land-stats { flex-wrap: wrap; gap: 1.5rem; }
+    .land-pillars { grid-template-columns: 1fr; }
+    .land-footer-top { grid-template-columns: 1fr 1fr; }
+}

@@ -23,6 +23,11 @@ const applyjob=async(req,res)=>{
                 message:"job not found"
             });
         }
+         // NEW: check if this user already applied to this job
+        const existing = await applications.findOne({ userid, jobid });
+        if (existing) {
+            return res.status(400).json({ message: "you have already applied to this job" });
+        }
        const app=await applications.create({
             userid,jobid
         })
@@ -56,12 +61,14 @@ const get_app=async (req,res)=>{
             });
 
         }
-         const app=await applications.find({userid:userid});
-        res.status(200).json({
-            message:"found application",
-            app
+               
 
-        })
+         //const app=await applications.find({userid:userid});
+         const app = await applications.find({ userid: userid }).populate('jobid', 'jobrole salary');
+       res.status(200).json({
+    message: "applications found",
+    applications: app
+});
 
 
 

@@ -15,6 +15,7 @@ const Navbar = () => {
         <nav className="navbar">
             <Link to="/" className="navbar-logo">SkillSwipe</Link>
             <div className="navbar-links">
+                <Link to="/jobs">Browse jobs</Link>
                 {token ? (
                     <>
                         <Link to="/dashboard">Dashboard</Link>

@@ -21,8 +21,8 @@ const Dashboard = () => {
                     const owned = allJobs.filter((j) => j.postedby === user._id);
                     setMyJobs(owned);
                 } else {
-                    const appsRes = await axios.get('/application/my');
-                    setMyApplications(appsRes.data?.applications || []);
+                   const appsRes = await axios.get('/application/my');
+setMyApplications(appsRes.data?.applications || []);
                 }
             } catch (err) {
                 console.error("Dashboard fetch error:", err);

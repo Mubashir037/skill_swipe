@@ -19,7 +19,7 @@ const JobDetail = () => {
         const fetchJob = async () => {
             try {
                 const res = await axios.get(`/jobs/${id}`);
-                setJob(res.data.job);
+                setJob(res.data.jj);
             } catch (err) {
                 setApplyStatus('Job not found.');
             } finally {
